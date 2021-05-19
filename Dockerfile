@@ -6,8 +6,6 @@ RUN cd /tmp \
  && ln -sf ~/.kubectx/completion/kubens.bash $COMPDIR/kubens \
  && ln -sf ~/.kubectx/completion/kubectx.bash $COMPDIR/kubectx \
  && cat << FOE >> ~/.bashrc \
-
-#kubectx and kubens
  && export PATH=~/.kubectx:\$PATH \
  && FOE
 ENTRYPOINT ["sleep"]
